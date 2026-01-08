@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rolyn Cris Villarde | Portfolio</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#2a67ff",
+        darkbg: "#081229",
+        card: "#0a1b46"
+      },
+      boxShadow: {
+        glow: "0 0 30px rgba(42,103,255,.7)"
+      }
+    }
+  }
+}
+</script>
+
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body class="scroll-smooth antialiased text-white font-[Poppins] overflow-x-hidden bg-gradient-to-br from-[#050b1f] via-[#081229] to-[#020617]">
+
+<!-- Background Effects -->
+<div class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.05)_1px,transparent_0)] bg-[size:40px_40px]"></div>
+<div class="fixed inset-0 -z-20 bg-gradient-to-tr from-blue-900/10 via-transparent to-cyan-500/10 animate-pulse"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="fixed top-0 w-full z-50 bg-[#0b1435]/90 backdrop-blur-xl border-b border-blue-900/40 shadow-[0_10px_30px_rgba(0,0,0,.4)]">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between">
+    <div class="text-2xl font-bold text-blue-400">VILLARDE</div>
+    <nav class="flex flex-wrap gap-4 text-sm md:text-base">
+      <a href="#home" class="text-blue-200 hover:text-blue-400 transition">Home</a>
+      <a href="#profile" class="text-blue-200 hover:text-blue-400 transition">Profile</a>
+      <a href="#certificates" class="text-blue-200 hover:text-blue-400 transition">Certificates</a>
+      <a href="#projects" class="text-blue-200 hover:text-blue-400 transition">Projects</a>
+      <a href="#contact" class="text-blue-200 hover:text-blue-400 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="min-h-screen flex items-center pt-28">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div class="text-center md:text-left animate-[fadeIn_1s_ease-out]">
+      <h1 class="text-4xl md:text-6xl font-bold text-blue-200 leading-tight">
+        ROLYN CRIS <br> VILLARDE
+      </h1>
+      <p class="mt-3 text-blue-300">Aspiring Web Developer | BSIT Student</p>
+      <p class="mt-4 text-blue-100 max-w-xl mx-auto md:mx-0">
+        Passionate BSIT student focused on learning, growing, and building meaningful digital experiences through web Development.
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="#projects" class="px-6 py-3 bg-primary rounded-lg shadow-glow transition-all duration-300 hover:scale-105 hover:brightness-110 text-center">
+          View My Work
+        </a>
+        <a href="#contact" class="px-6 py-3 border border-primary rounded-lg transition-all duration-300 hover:bg-primary/10 hover:scale-105 text-center">
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <img src="image/profile.jpg"
+        class="w-64 h-64 md:w-80 md:h-80 rounded-xl border-4 border-primary shadow-glow object-cover transition-all duration-500 hover:scale-105 animate-[pulse_4s_ease-in-out_infinite]">
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROFILE ================= -->
+<section id="profile" class="py-20 bg-[#070f2b]">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-center text-3xl font-bold text-blue-200 mb-10">About Me</h2>
+
+    <!-- PROFILE SUMMARY -->
+<div class="bg-card/90 backdrop-blur-md border border-blue-800 rounded-xl p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+  <p class="text-blue-100 leading-relaxed">
+    I am a <strong>BS Information Technology student</strong> with a strong interest in 
+    <strong>Web Development</strong> and modern digital technologies. I enjoy building 
+    clean, responsive, and user-friendly websites while continuously improving my 
+    technical and design skills. My goal is to gain real-world experience and grow into 
+    a Skilled <strong>Web Developer</strong> or <strong>IT Professional</strong>.
+  </p>
+</div>
+
+    <!-- SKILLS / STRENGTHS -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+
+      <div class="bg-card/90 backdrop-blur-md p-6 rounded-xl border border-blue-800 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+        <i class="fa-solid fa-code text-3xl text-blue-400 mb-3"></i>
+        <h4 class="font-semibold text-blue-100 mb-2">Basic Web Development</h4>
+        <p class="text-blue-300 text-sm">
+          Experience with HTML, CSS, Tailwind CSS, and basic JavaScript for building responsive
+          and visually appealing websites.
+        </p>
+      </div>
+
+      <div class="bg-card/90 backdrop-blur-md p-6 rounded-xl border border-blue-800 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+        <i class="fa-solid fa-layer-group text-3xl text-blue-400 mb-3"></i>
+        <h4 class="font-semibold text-blue-100 mb-2">UI & Page Layout</h4>
+        <p class="text-blue-300 text-sm">
+          Skilled in creating structured layouts, consistent spacing, and modern dark UI designs
+          with focus on readability and user experience.
+        </p>
+      </div>
+
+      <div class="bg-card/90 backdrop-blur-md p-6 rounded-xl border border-blue-800 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+        <i class="fa-solid fa-users text-3xl text-blue-400 mb-3"></i>
+        <h4 class="font-semibold text-blue-100 mb-2">Teamwork & Continuous Learning</h4>
+        <p class="text-blue-300 text-sm">
+          Comfortable working in team environments, open to feedback, and motivated to continuously
+          learn new tools, frameworks, and technologies.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= CERTIFICATES ================= -->
+<section id="certificates" class="py-20 bg-gradient-to-b from-[#020617] to-[#0b1220]">
+  <h2 class="text-center text-3xl font-bold mb-10 text-blue-200">Certificates & Achievements</h2>
+
+  <div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-card/90 backdrop-blur-md p-4 rounded-xl border border-blue-800 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+      <img src="image/1cert.jpg" class="rounded-lg mb-3">
+      <h3 class="font-semibold">Computing from Past to Present</h3>
+      <p class="text-sm text-blue-300">IBM SkillsBuild</p>
+    </div>
+
+    <div class="bg-card/90 backdrop-blur-md p-4 rounded-xl border border-blue-800 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+      <img src="image/2cert.jpg" class="rounded-lg mb-3">
+      <h3 class="font-semibold">Networking Basics</h3>
+      <p class="text-sm text-blue-300">IBM SkillsBuild</p>
+    </div>
+
+    <div class="bg-card/90 backdrop-blur-md p-4 rounded-xl border border-blue-800 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+      <img src="image/3cert.jpg" class="rounded-lg mb-3">
+      <h3 class="font-semibold">Computer Basics</h3>
+      <p class="text-sm text-blue-300">IBM SkillsBuild</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-20 bg-[#050b1f]">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <img src="image/GLP.jpg" class="rounded-xl border border-blue-700 transition-all duration-500 hover:scale-105">
+    <div>
+      <h3 class="text-2xl font-bold text-blue-200">Game Library System</h3>
+      <p class="mt-3 text-blue-100">Steam-inspired web platform that allows users to manage a digital game library.</p>
+      <ul class="mt-4 list-disc list-inside text-blue-300">
+        <li>Add, Edit, Delete Games</li>
+        <li>Category Management</li>
+        <li>Responsive Dark UI</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-20 bg-gradient-to-t from-[#020617] to-[#0b1220]">
+  <h2 class="text-center text-3xl font-bold text-blue-200 mb-10">Get In Touch</h2>
+
+  <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+    <!-- LEFT INFO -->
+    <div class="space-y-4">
+
+      <p class="flex items-center gap-3">
+        <i class="fa-solid fa-user text-blue-400"></i>
+        <span>Rolyn Cris Villarde</span>
+      </p>
+
+      <p class="flex items-center gap-3">
+        <i class="fa-solid fa-envelope text-blue-400"></i>
+        <span>rolyncrisv@gmail.com</span>
+      </p>
+
+      <p class="flex items-center gap-3">
+        <i class="fa-solid fa-location-dot text-blue-400"></i>
+        <span>Roxas City, Capiz</span>
+      </p>
+
+      <!-- SOCIAL LINKS -->
+      <div class="mt-6 space-y-3">
+
+        <!-- Facebook -->
+        <a href="https://web.facebook.com/Rolyncrisvi" target="_blank"
+           class="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 px-4 py-3 rounded-lg transition">
+          <i class="fa-brands fa-facebook text-xl"></i>
+          <span>Facebook</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/rolyn-cris-villarde-925066394/" target="_blank"
+           class="flex items-center gap-3 bg-blue-700 hover:bg-blue-800 px-4 py-3 rounded-lg transition">
+          <i class="fa-brands fa-linkedin text-xl"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/Rvillarde" target="_blank"
+           class="flex items-center gap-3 bg-gray-800 hover:bg-gray-900 px-4 py-3 rounded-lg transition">
+          <i class="fa-brands fa-github text-xl"></i>
+          <span>GitHub</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <form class="bg-card/90 backdrop-blur-md p-6 rounded-xl border border-blue-800 flex flex-col gap-4 transition-all duration-300 hover:shadow-glow">
+      <input
+        class="p-3 rounded bg-slate-800/80 border border-blue-900 focus:ring-2 focus:ring-blue-500 outline-none"
+        placeholder="Your Name"
+      >
+      <input
+        type="email"
+        class="p-3 rounded bg-slate-800/80 border border-blue-900 focus:ring-2 focus:ring-blue-500 outline-none"
+        placeholder="Your Email"
+      >
+      <textarea
+        class="p-3 rounded bg-slate-800/80 border border-blue-900 focus:ring-2 focus:ring-blue-500 outline-none"
+        rows="4"
+        placeholder="Your Message"
+      ></textarea>
+
+      <button
+        class="bg-primary py-3 rounded-lg shadow-glow text-black font-semibold transition-all duration-300 hover:scale-105 hover:brightness-110"
+      >
+        Send Message
+      </button>
+    </form>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-6 bg-[#0b1435] border-t border-blue-900/40 text-blue-300 text-sm">
+  © 2026 Rolyn Cris Villarde | All Rights Reserved
+</footer>
+
+</body>
+</html>
